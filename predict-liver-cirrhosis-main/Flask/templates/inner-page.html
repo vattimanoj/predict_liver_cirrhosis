@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Liver Prediction App</title>
+    <link rel="stylesheet" href="\static\inner-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="header">
+        <h2>Liver Cirrhosis Prediction</h2>
+        <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+            <a href="{{ url_for('about') }}">About</a>
+        </nav>
+    </div>
+    <div class="container">
+        
+        <h2>Team Information</h2>
+        <p><strong>Team ID:</strong>LTVIP2025TMID38618</p>
+
+        <div class="team">
+            <div class="member">
+                <h4>Kadali Harshitha Ramya</h4>
+                <a href="mailto:ramyakadali107@gmail.com">ramyakadali107@gmail.com</a>
+            </div>
+
+            <div class="member">
+                <h4>Kumchanapalli Arjun Kumar</h4>
+                <a href="mailto:arjunkunchanapalli80@gmail.com">arjunkunchanapalli80@gmail.com</a>
+            </div>
+
+            <div class="member">
+                <h4>Pithani Pavankalyan</h4> 
+                <a href="mailto:22221A05D6@bvcgroup.in">22221A05D6@bvcgroup.in</a>
+            </div>
+
+            <div class="member">
+                <h4>Sunkara Ganesh</h4>
+                <a href="mailto:ganeshsunkra90@gmail.com">ganeshsunkra90@gmail.com</a>
+            </div>
+        </div>
+
+        <a href="{{ url_for('home') }}" class="back-link">← Go back</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+/* === General Page Styling === */
+body {
+    background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: rgb(51, 106, 164);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header h2 {
+    margin: 0;
+    color: #f3f5fa;
+    font-size: 24px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #eff0f4;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.header a:hover {
+    color: #1d4ed8;
+}
+
+
+.container {
+    width: 900px;
+    margin: 50px auto;
+    background-color: #1e1b4b;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+}
+
+/* === Text and Headings === */
+h2, h3 {
+    color: #e0e7ff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #dbeafe;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* === Team Section === */
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.member {
+    width: 300px;
+    background-color: #f8fafc;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.member:hover {
+    transform: scale(1.05);
+}
+
+.member h4 {
+    margin: 0 0 8px;
+    color: #1e3a8a;
+    font-size: 18px;
+}
+
+.member p {
+    margin: 0;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.member a {
+    display: block;
+    margin-top: 10px;
+    color: #00040d;
+    font-size: 13px;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.member a:hover {
+    text-decoration: underline;
+}
+
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    color: #e0f2fe;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}

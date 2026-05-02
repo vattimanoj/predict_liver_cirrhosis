@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Details</title>
+    <link rel="stylesheet" href="\static\portfolia.css">
+</head>
+<body>
+    <div class="header">
+        <h2>Liver Cirrhosis Prediction</h2>
+        <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+            <a href="{{ url_for('about') }}">About</a>
+        </nav>
+    </div>
+    <h1>About This Project</h1>
+    <p>Liver cirrhosis is a chronic and progressive liver disease that results in irreversible scarring of liver tissue. It can stem from various causes, including chronic alcohol use, hepatitis infections, and non-alcoholic fatty liver disease. If not detected and treated early, it can lead to severe complications such as liver failure and cancer.
+
+This project is focused on developing a predictive model to assist in the early detection of liver cirrhosis using advanced machine learning algorithms. Clinical data—such as bilirubin levels, liver enzymes (AST, ALT), albumin, platelet count, and alcohol consumption—are analyzed to assess a patient’s risk.
+
+The machine learning models used in this study include Naive Bayes, K-Nearest Neighbors (KNN), Support Vector Machine (SVM), Logistic Regression, and Random Forest. Each model is trained and evaluated on real-world datasets using performance metrics like accuracy, precision, recall, and F1 score to ensure reliability and robustness.
+
+By accurately identifying individuals at risk, the project supports early intervention and enables healthcare professionals to tailor treatment strategies to each patient. This not only improves clinical outcomes but also optimizes healthcare resource utilization.
+
+Overall, the project demonstrates the transformative potential of machine learning in hepatology, providing a powerful tool for data-driven diagnostics and proactive liver care.</p>
+    <h1>Feature Overview and Normal Ranges</h1>
+    <div class="features">
+
+    <div class="feature">
+        <h3>1. Bilirubin</h3>
+        <ul>
+            <li>A waste product formed during the breakdown of red blood cells. Processed by the liver and excreted in bile.</li>
+            <li><span class="label">Normal Range:</span> 0.1 – 1.2 mg/dL</li>
+            <li><span class="label">Clinical Significance:</span> High levels may indicate liver dysfunction, bile duct blockage, or hemolytic anemia.</li>
+        </ul>
+    </div>
+
+    <div class="feature">
+        <h3>2. AST (Aspartate Aminotransferase)</h3>
+        <ul>
+            <li>An enzyme found in the liver, heart, and muscles. Involved in amino acid metabolism.</li>
+            <li><span class="label">Normal Range:</span> 10 – 40 U/L</li>
+            <li><span class="label">Clinical Significance:</span> Elevated levels may indicate liver inflammation, muscle injury, or alcoholic liver disease.</li>
+        </ul>
+    </div>
+
+    <div class="feature">
+        <h3>3. ALT (Alanine Aminotransferase)</h3>
+        <ul>
+            <li>A liver-specific enzyme that reflects liver cell damage.</li>
+            <li><span class="label">Normal Range:</span> 7 – 56 U/L</li>
+            <li><span class="label">Clinical Significance:</span> High ALT levels suggest hepatitis or fatty liver disease.</li>
+        </ul>
+    </div>
+
+    <div class="feature">
+        <h3>4. Albumin</h3>
+        <ul>
+            <li>A protein made by the liver that maintains blood fluid balance and transports substances.</li>
+            <li><span class="label">Normal Range:</span> 3.5 – 5.0 g/dL</li>
+            <li><span class="label">Clinical Significance:</span> Low levels may indicate chronic liver disease, malnutrition, or kidney issues.</li>
+        </ul>
+    </div>
+
+    <div class="feature">
+        <h3>5. Hemoglobin</h3>
+        <ul>
+            <li>An oxygen-carrying protein in red blood cells.</li>
+            <li><span class="label">Normal Range:</span> 12 – 16 g/dL (female), 13.5 – 17.5 g/dL (male)</li>
+            <li><span class="label">Clinical Significance:</span> Low levels may indicate anemia or chronic illness; liver diseases can contribute to low hemoglobin.</li>
+        </ul>
+    </div>
+
+    <div class="feature">
+        <h3>6. Platelet Count</h3>
+        <ul>
+            <li>Plays a key role in blood clotting and stopping bleeding.</li>
+            <li><span class="label">Normal Range:</span> 1.5 – 4.5 lakhs/mm³</li>
+            <li><span class="label">Clinical Significance:</span> Low count can occur in liver cirrhosis, bone marrow disorders, or immune conditions.</li>
+        </ul>
+    </div>
+
+    <div class="feature">
+        <h3>7. Alcohol Quantity</h3>
+        <ul>
+            <li>Indicates the average daily intake of alcohol, typically measured in "quarters" where 1 quarter = 180 ml of hard liquor</li>
+            <li><span class="label">Normal Range:</span>: 0 quarters/day</li>
+            <li><span class="label">Clinical Significance:</span> High daily alcohol intake is a key risk factor for liver cirrhosis. It damages liver cells, promotes inflammation, and accelerates fibrosis.</li>
+        </ul>
+    </div>
+</div>
+
+    <h1>Model Performance</h1>
+    <div class="container">
+    
+
+    <div class="model">
+        <h3>Random Forest</h3>
+        <ul>
+            <li><strong>Accuracy:</strong> 100%</li>
+            <li><strong>Features used:</strong> Bilirubin, AST, ALT, Albumin, Hemoglobin, Platelet Count</li>
+            <li><strong>Preprocessing:</strong> Normalization</li>
+        </ul>
+    </div>
+
+    <div class="model">
+        <h3>Support Vector Machine</h3>
+        <ul>
+            <li><strong>Accuracy:</strong> 97%</li>
+            <li><strong>Features used:</strong> Bilirubin, AST, ALT, Albumin, Hemoglobin, Platelet Count</li>
+            <li><strong>Preprocessing:</strong> Normalization</li>
+        </ul>
+    </div>
+
+    <div class="model">
+        <h3>Naive Bayes</h3>
+        <ul>
+            <li><strong>Accuracy:</strong> 100%</li>
+            <li><strong>Features used:</strong> Bilirubin, AST, ALT, Albumin, Hemoglobin, Platelet Count</li>
+            <li><strong>Preprocessing:</strong> Normalization</li>
+        </ul>
+    </div>
+
+    <div class="model">
+        <h3>Logistic Regression</h3>
+        <ul>
+            <li><strong>Accuracy:</strong> 97%</li>
+            <li><strong>Features used:</strong> Bilirubin, AST, ALT, Albumin, Hemoglobin, Platelet Count</li>
+            <li><strong>Preprocessing:</strong> Normalization</li>
+        </ul>
+    </div>
+
+    <div class="model">
+        <h3>KNN</h3>
+        <ul>
+            <li><strong>Accuracy:</strong> 100%</li>
+            <li><strong>Features used:</strong> Bilirubin, AST, ALT, Albumin, Hemoglobin, Platelet Count</li>
+            <li><strong>Preprocessing:</strong> Normalization</li>
+        </ul>
+    </div>
+</div>
+
+        <h1>Model Comparison</h1>
+        <img class="centered-img" src="\static\model comparison.png" alt="Girl in a jacket" width="600" height="400">
+    
+    <a href="{{ url_for('home') }}" class="back-link">← Go back</a>
+    <div id="header-placeholder"></div>
+
+
+</body>
+</html>
